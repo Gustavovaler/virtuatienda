@@ -1,0 +1,36 @@
+body{
+
+
+}
+
+section{
+	max-width: 880px;
+	margin-right: auto;
+	margin-left: auto;
+	background: #eef;
+	
+    
+} 
+article{
+
+}
+p{
+	background: #fee;
+	
+}
+
+@media screen and (min-width: 30em){
+	section{
+		display: table;
+		table-layout: fixed;
+	}
+	article{
+		display: table-cell;
+		padding: 0px 12px;
+
+	}
+	.header-section{
+		display: table-caption;
+	}
+}
+

@@ -1,0 +1,10 @@
+.container{
+	width: 40%;
+	padding: 50px;
+	background: #eaeeff;
+	margin: 50px auto;
+}
+h1{
+	font-size: 2.5em;
+	color: red;
+}

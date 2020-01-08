@@ -1,0 +1,102 @@
+
+
+	body{
+		background: #efecef;
+	}
+	.noticias-producto{
+		min-height: 60px;
+		width: 90%;
+		margin: auto;
+		padding: 20px;
+	}
+
+	.containerD{
+		margin-top: 100px;
+		width: 80%;
+		margin: auto;
+		background: #fff;
+		height: 1500px;
+		box-shadow: 1px 1px 0.4em #c2c2c2;
+		
+	}
+	.itemD{
+		width: 72%;
+		margin: 0;
+		background: #fff;
+		max-width: 72%;
+		min-width: 72%;
+		float: left;
+
+
+	}
+	.item2{
+		width: 25%;
+		margin: 0;
+		background: #fff;
+		max-width: 25%;
+		min-width: 25%;
+		float: left;
+		padding: 1.5%;
+
+	}
+	#foto-art{
+		width:60%;
+		margin: 30px ;
+		padding: 50px;
+
+	}
+	.item2 p{
+		
+		
+
+	}
+	.item3{
+		width: 72%;
+		margin: 0;
+		background:#fff;
+		max-width: 72%;
+		min-width: 72%;
+		float: left;
+		
+	}
+	.descripcion{
+		padding: 20px;
+
+	}
+    .descripcion h3{
+    	background: #eaeaea;
+
+    }
+    .descripcion p{
+    	font-size: 1.5em;
+    	font-weight: 400;
+    }
+    .titulo-art{
+    	width: 25%;
+		margin: 0;
+		background: #fafcf2;
+		max-width: 25%;
+		min-width: 25%;
+		float: left;
+		padding: 1.5%;
+    }
+    .ubicacion{
+    	.item3{
+		width: 72%;
+		margin: 0;
+		background: #5ff;
+		max-width: 72%;
+		min-width: 72%;
+		float: left;
+		
+    }
+    .aside5{
+    	width: 25%;
+		margin: 0;
+		background: #fff;
+		max-width: 25%;
+		min-width: 25%;
+		float: left;
+		padding: 1.5%;
+		
+    }

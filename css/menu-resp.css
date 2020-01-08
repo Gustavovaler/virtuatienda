@@ -1,0 +1,121 @@
+
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', sans-serif;
+
+}
+nav{
+	width: 100%;
+	background: #00316b;
+}
+ul{
+	width: 90%;
+	margin:  0 auto;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+}
+
+ul li:hover{
+	background: #e91e63;
+}
+ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+.toggle{
+	width: 100%;
+	padding: 10px 20px;
+	background: #001f44;
+	text-align: right;
+	box-sizing: border-box;
+	color: white;
+	font-size: 30px;
+	display: none;
+}
+.brand{
+	display: inline-block;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+	
+}
+
+@media (max-width:768px){
+
+	.toggle
+	{
+		display: block;
+	}
+	ul 
+	{
+		width: 100%;
+		display: none;
+
+	}
+	ul li
+	{
+		display: block; 
+		text-align: center;
+	}
+	.active{
+		display: block;
+	}
+	.textareaclas{
+	border: 1px solid #eaeaea;
+	width: 10em;
+	padding: 15px 15px 5px 15px;
+	font-size: 20px;
+	outline: none;
+	margin-left: 40px;
+	margin-bottom: 15px;
+
+}
+
+.selectclass{
+	border: 1px solid #eaeaea;
+	width: 10em;
+	padding: 15px 15px 5px 15px;
+	font-size: 20px;
+	outline: none;
+	margin-left: 40px;
+	margin-bottom: 15px;
+
+
+}
+
+
+}
+#form-buscar-submit{
+	margin-bottom: 10px;
+	
+	
+
+}
+
+#form-buscar-input{
+	outline: none;
+	margin-bottom: 10px;	
+	margin-left: 100px;
+	
+
+	
+
+}
+.condicion{
+
+	
+	padding-left: 30px;
+	margin-left: 10px;
+}
+input[type=submit]{
+	font-family: 'Slabo 27px', serif;
+}
+input[type=text]{
+	font-family: 'Slabo 27px', serif;
+}

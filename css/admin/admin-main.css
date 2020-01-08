@@ -1,0 +1,29 @@
+.container{
+	
+	background: #ffffee;
+	margin-top: 50px;
+
+	border: 1px solid black;
+}
+.etiqueta{
+
+}
+.entrada{
+	width: 25em;
+}
+.navegador{
+	width: 100%;
+	background: #3333ff;
+	padding: 10px 10px 10px 40px;
+
+}
+.navegador a{
+	color: #fff;
+	padding-left: 20px;
+}
+.opciones-mail-nuevo{
+	width: 45%;
+	/*border: 1px solid blue;*/
+	padding: 30px;
+	vertical-align: top;
+}

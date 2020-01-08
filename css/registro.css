@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: #000;
+
+}
+body{
+	/*background: #eaeaea;*/
+	font-family: 'Slabo 27px', serif;
+}
+.container{
+	background: #ddeeff;
+	color: #222222;
+}
+#titulo-cat{
+
+	margin-top: 30px;
+}
+/*.container{
+	width: 45%;
+	margin: 0px auto;
+	background:#ddeeff;
+}*/
+.formulario-registro{
+	background:#eeeeee;	
+	margin: 20px;
+}
+.input-reg, .input-reg2, .input-reg3, .input-reg4{
+	border: 1px solid #eaeaea;
+	width: 25em;
+	padding: 15px 15px 5px 15px;
+	font-size: 20px;
+	outline: none;
+	margin-left: 40px;
+	margin-bottom: 15px;
+
+}
+.fotoextra1, .fotoextra2 , .fotoextra3{
+	display: none;
+}
+#agregarFoto{
+	background: #3366ff;
+	color: #fff;
+	width: 80px;
+	padding: 8px;
+	border-radius: 5px;
+	float: right;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+#agregarFoto:hover{
+	background: #6699ff;
+}
+.btn-submit{
+	clear: both;
+}
+.input-reg:focus{
+	border: none;
+	border-bottom: 2px solid #82C4FC;
+}
+.input-reg-submit{
+
+	border: 1px solid #effffa;
+	width: 25em;
+	padding: 15px 15px 5px 15px;
+	font-size: 20px;
+	outline: none;
+	margin-left: 40px;
+	margin-bottom: 15px;
+	background: #62ee62;
+	color: #2b2b2b;
+
+}
+.input-reg-submit:hover{
+	background: #9fff93;
+}
+
+
+
+label{
+	font-size: 18px;
+	color: #555555;
+	padding: 8px;
+	margin: 5px;
+}
+abbr{
+	color: #ff9393;
+	cursor: pointer;
+}
+span{
+	padding-left: 30px;
+	color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+#label1{
+	margin-top: 15px;
+	padding-top: 10px;
+}
+#btn-submit-reg{
+	background: #1E6BB3;
+	color: #efefef;
+}
+#btn-submit-reg:hover{
+	box-shadow: 3px 3px 3px #696969;
+}
+
+textarea{
+	border: 1px solid #eaeaea;
+	width: 20em;
+	padding: 15px 15px 5px 15px;
+	font-size: 20px;
+	outline: none;
+	
+	margin-bottom: 15px;
+
+}
+
+select{
+	border: 1px solid #eaeaea;
+	width: 25em;
+	padding: 15px 15px 5px 15px;
+	font-size: 20px;
+	outline: none;
+	
+	margin-bottom: 15px;
+
+}
+@media (max-width:768px){
+
+
+
+
+select{
+	border: 1px solid #eaeaea;
+	width: 10em;
+	padding: 15px 15px 5px 15px;
+	font-size: 20px;
+	outline: none;
+	margin-left: 40px;
+	margin-bottom: 15px;
+
+}
+
+#label1{
+	margin-top: 15px;
+	padding-top: 10px;
+
+
+}
+h1{
+	color: red;
+	background: red;
+}
+

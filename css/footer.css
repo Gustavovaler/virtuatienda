@@ -1,0 +1,27 @@
+
+body{
+	font-family: 'Slabo 27px', serif;
+}
+
+.footer{
+	background: #00316b;
+	width: 100%;
+	min-height: 40px;
+	margin-top: 50px;
+	color: white;
+	clear: both;
+}
+
+.text-footer{
+	text-align: center;
+	padding: 20px;
+	font-weight: 600;
+	font-size: 1.4rem;
+}
+.copy{
+	
+}
+.copyright{
+	margin: 10px auto;
+	text-align: right;
+}

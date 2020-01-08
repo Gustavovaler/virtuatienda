@@ -1,0 +1,69 @@
+
+body{
+	background: #e8e8e8;
+	font-family: 'Slabo 27px', serif;
+}
+
+.container{
+	width: 40%;
+	margin: 30px auto;
+	background: #fff;
+	box-shadow: 1px 1px 0.4em #b2b2b2;
+}
+.titulo{
+	font-size: 2.5em;
+	padding-left: 40px;
+	font-family: serif;
+
+}
+.container2{
+	width: 40%;
+	margin: 0px auto;
+	background: #fff;
+	box-shadow: 1px 1px 0.4em #b2b2b2;
+
+}
+
+#nombre, #correo{
+	background: ;
+	border: 0px ;
+	font-size: 1.6em;
+	width: 85%;
+	margin: 10px auto;
+	
+	margin-left:20px;
+	margin-right: 20px;
+}
+
+#correo:focus, #nombre:focus{
+	outline: none;	
+	border-bottom: 2px solid teal;
+}
+#mensaje{
+	border: 0;
+	width: 85%;
+	padding: 20px;
+
+}
+#btn-enviar{
+	float: right;
+	margin-right: 40px;
+	margin-top: 20pX;
+	background: teal;
+	color: #fff;
+	width: 150px;
+	font-size: 1.2rem;
+	border-radius: 20px;
+	outline: none;
+}
+#btn-enviar:hover{
+	background: #ff3333;
+	color: #c9c9c9;
+}
+@media (max-width: 768px) {
+	.container{
+		width: 90%;
+
+	}
+	
+}

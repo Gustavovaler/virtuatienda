@@ -1,0 +1,26 @@
+body{
+	font-family: 'Slabo 27px', serif;
+}
+
+.barra{
+	background: #00316b;
+}
+.caja_busqueda{
+	max-width: 55%;
+	marin: 0px auto;
+
+}
+#form-buscar-input{
+	/*margin-left:  46%;*/
+	padding: 6px 6px 6px 10px;
+	box-sizing: border-box;
+	font-size: 16px;
+	width: 45%;
+
+}
+#form-buscar-submit{
+	padding: 6px 6px 6px 5px;
+	box-sizing: border-box;
+	font-size: 16px
+
+}

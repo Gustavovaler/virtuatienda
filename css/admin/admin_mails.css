@@ -1,0 +1,22 @@
+.container{
+	
+	background: #ffffee;
+	margin-top: 50px;
+
+	border: 1px solid black;
+}
+.etiqueta{
+
+}
+.entrada{
+	width: 25em;
+}
+.navegador{
+	width: 100%;
+	background: #3333ff;
+	padding: 10px 10px 10px 40px;
+
+}
+.navegador a{
+	color: #fff;
+}

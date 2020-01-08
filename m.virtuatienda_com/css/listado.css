@@ -1,0 +1,38 @@
+
+body{
+	background-color: #cecece;
+}
+.caja{
+	clear: both;
+	padding: 5px;
+	margin: 2px;
+	background-color: #f9f1ff;
+	min-height: 120px;
+}
+.foto{
+	float: left;
+	/*background-color: red;*/
+	margin-right: 10px;
+}
+.foto img{
+	width: 105px;
+	border: 1px solid #3333cc;	
+}
+.titulo{
+	font-size: 1em;
+	/*background-color: #99ff99;*/
+	
+	/*border: 2px solid gray;*/
+	
+}
+
+.precio{
+	font-size: 1.5em;	
+	float: right;
+	margin-right: 15px;
+	/*background-color: yellow;*/
+}
+.titulo a{
+	list-style-type: none;
+	color: black;
+}

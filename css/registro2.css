@@ -1,0 +1,14 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: #000;
+
+}
+body{
+	/*background: #eaeaea;*/
+	font-family: 'Slabo 27px', serif;
+}
+span{
+	color: gray;
+	float: right;
+}
