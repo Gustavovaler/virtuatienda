@@ -104,6 +104,34 @@ if ($conexion->query($sql_sub_categoria_1)) {
 }
 
 
+
+$categorias_name = [
+					"Tecnologia",
+					"Computacion",
+					"Electro y Hogar",
+					"Video Juegos",
+					"Libros",
+					"Vehiculos",
+					"Repuestos",
+					"Industria",
+					"Herramientas",
+					"Servicios",
+					"Deportes",
+					"Aire Libre",
+					"Indumentaria",
+					"Calzado",
+					"Juguetes y Bebe"
+				];
+
+
+for ($i=0; $i < sizeof($categorias_name); $i++) { 
+	if ($conexion->query("INSERT INTO vt_categorias (categoria) VALUES ('$categorias_name[$i]')")) {
+		echo "<br> Se añade categoria ".$categorias_name[$i];
+	}
+	;
+}
+
+
 $conexion->close();
 
 ?>
