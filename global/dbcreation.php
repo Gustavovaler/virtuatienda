@@ -104,6 +104,6 @@ if ($conexion->query($sql_sub_categoria_1)) {
 }
 
 
-$conexion->close;
+$conexion->close();
 
 ?>
