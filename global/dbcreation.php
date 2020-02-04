@@ -131,6 +131,10 @@ for ($i=0; $i < sizeof($categorias_name); $i++) {
 	;
 }
 
+$subcategorias_name = [
+						
+						];
+
 
 $conexion->close();
 
