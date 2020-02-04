@@ -81,37 +81,37 @@ $sql_drop_table2 = "DROP TABLE vt_categorias";
 
 
 if ($conexion->query($sql_drop_table2)) {
-	echo "Borrado tabla categorias<br>";
+	echo "**Borrado tabla categorias<br>";
 }
 if ($conexion->query($sql_drop_table)) {
-	echo "Borrado tabla Sub categorias<br>";
+	echo "**Borrado tabla Sub categorias<br>";
 }
 
 if ($conexion->query($sql_usuarios)) {
-	echo "La tabla vt_usuarios se creó con éxito.<br>";
+	echo "**La tabla vt_usuarios se creó con éxito.<br>";
 }else{
-	echo "Tabla vt_usuarios no creada: " . $conexion->error . '<br>';
+	echo "**Tabla vt_usuarios no creada: " . $conexion->error . '<br>';
 }
 if ($conexion->query($sql_categorias)) {
-	echo "La tabla vt_categorias se creó con éxito.<br>";
+	echo "**La tabla vt_categorias se creó con éxito.<br>";
 }else{
-	echo "Tabla vt_categorias no creada: " . $conexion->error . '<br>';
+	echo "**Tabla vt_categorias no creada: " . $conexion->error . '<br>';
 }
 if ($conexion->query($sql_publicaciones)) {
-	echo "La tabla publicaciones se creó con éxito.<br>";
+	echo "**La tabla publicaciones se creó con éxito.<br>";
 }else{
-	echo "Tabla publicaciones no creada: " . $conexion->error . '<br>';
+	echo "**Tabla publicaciones no creada: " . $conexion->error . '<br>';
 }
 if ($conexion->query($sql_preguntas)) {
-	echo "La tabla vt_preguntas se creó con éxito..<br>";
+	echo "**La tabla vt_preguntas se creó con éxito..<br>";
 }else{
-	echo "Tabla vt_preguntas no creada: " . $conexion->error . '<br>';
+	echo "**Tabla vt_preguntas no creada: " . $conexion->error . '<br>';
 }
 
 if ($conexion->query($sql_sub_categoria_1)) {
-	echo "La tabla vt_sub_categoria_1 se creó con éxito..<br>";
+	echo "**La tabla vt_sub_categoria_1 se creó con éxito..<br>";
 }else{
-	echo "Tabla vt_sub_categoria_1 no creada: " . $conexion->error . '<br>';
+	echo "**Tabla vt_sub_categoria_1 no creada: " . $conexion->error . '<br>';
 }
 
 
@@ -131,7 +131,8 @@ $categorias_name = [
 					"Aire Libre",
 					"Indumentaria",
 					"Calzado",
-					"Juguetes y Bebe"
+					"Juguetes y Bebe",
+					"Macotas"
 				];
 
 $subcategorias_name = [["Celulares","Accsesorios para celulares","Drones y Accesorios", "Camaras digitales","Accesorios para camaras"],
@@ -145,10 +146,11 @@ $subcategorias_name = [["Celulares","Accsesorios para celulares","Drones y Acces
 						["Manuales", "Digitales", "Escanners","Otros"],
 						["Profesores", "Mantenimiento del Hogar", "Empresas", "Otros"],
 						["Tenis y Paddle","Futbol","Hockey", "Golf","Runing", "Gimnasio", "Basket", "Deportes  Motor", "Hobbies","Otros"],
-						[],
-						[],
-						[],
-						[]
+						["Camping", "Piletas", "Caza y Pesca", "Otros"],
+						["Ropa de Mujer", "Ropa de Hombre", "Ropa sin genero", "De chicos ", "Otros"],
+						["Para Hombre", "Para mujer", "Sin genero", "Chic@s"],
+						["Juegos de mesa", "Juegos de ingenio", "Ropa y cosas de bebe", "Otros"],
+						["Cosas de Pichichos", "Cosas de Gatis", "Otras mascotas"]
 
 						];
 
@@ -158,13 +160,13 @@ $subcategorias_name = [["Celulares","Accsesorios para celulares","Drones y Acces
 for ($i=0; $i < sizeof($categorias_name); $i++) { 
 	if ($conexion->query("INSERT INTO vt_categorias (categoria) VALUES ('$categorias_name[$i]')")) {
 
-		echo "<br> -> Se añade categoria ".$categorias_name[$i];
+		echo "<br>** -> Se añade categoria ".$categorias_name[$i];
 		for ($r=0; $r < sizeof($subcategorias_name[$i]) ; $r++) { 
 			
 			$cat = $subcategorias_name[$i][$r];
 			if ($conexion->query("INSERT INTO vt_sub_categoria_1
 			 (categoria,sub_categoria_1) VALUES (($i+1),'$cat')") ){
-			 	echo "<br> -----> Se añade sub categoria ".$subcategorias_name[$i][$r];
+			 	echo "<br>** -----> Se añade sub categoria ".$subcategorias_name[$i][$r];
 			}
 		
 		}
