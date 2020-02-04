@@ -2,12 +2,12 @@
 <html lang="es">
 <head>
 	  <script src="js/header.js"></script>
-  <script type="text/javascript">
+<!--  <script type="text/javascript">
     if (isMobile()) {
        location.href="https://m.virtuatienda.com"
        location.href="m.virtuatienda_com";
     };
-  </script>
+  </script>-->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<meta keyword="compra, venta, virtuatienda, electronico , computacion , comprar, argentina, buenos aires">

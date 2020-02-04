@@ -144,12 +144,12 @@ if(!isset($_SESSION['usuario'])){
 			
 
 			$sql_publicaciones = "SELECT titulo,imagen, ID FROM vt_publicaciones WHERE ID_vendedor='$vendedor_id'";
-			$resultado_publicaciones = mysqli_query($conn, $sql_publicaciones);
-            $cant_publicaciones = mysqli_num_rows($resultado_publicaciones);
+			    $resultado_publicaciones = mysqli_query($conn, $sql_publicaciones);
+          $cant_publicaciones = mysqli_num_rows($resultado_publicaciones);
 
             if ($cant_publicaciones != 0) {
                 echo '<script type="text/javascript">document.getElementById("publicaciones_cantidad").innerHTML ="("+'.$cant_publicaciones.'+")";</script>';
-            }
+            
             
         
 			foreach ($resultado_publicaciones as $publi) {
@@ -169,6 +169,9 @@ if(!isset($_SESSION['usuario'])){
 			</div>
 
 			<?php }
+    }else{
+      echo "No tienes publicaciones activas. <a href='seleccion_categoria.php'>Crear una publicacion</a>";
+    }
 
 			?>
     	</div>

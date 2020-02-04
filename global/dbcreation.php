@@ -76,6 +76,17 @@ $sql_usuarios = "CREATE TABLE IF NOT EXISTS vt_usuarios(
 				 is_admin int(4) DEFAULT 0)
 				 ENGINE = InnoDB DEFAULT CHARSET = utf8";
 
+$sql_drop_table = "DROP TABLE vt_sub_categoria_1";
+$sql_drop_table2 = "DROP TABLE vt_categorias";
+
+
+if ($conexion->query($sql_drop_table2)) {
+	echo "Borrado tabla categorias<br>";
+}
+if ($conexion->query($sql_drop_table)) {
+	echo "Borrado tabla Sub categorias<br>";
+}
+
 if ($conexion->query($sql_usuarios)) {
 	echo "La tabla vt_usuarios se creó con éxito.<br>";
 }else{
@@ -123,17 +134,45 @@ $categorias_name = [
 					"Juguetes y Bebe"
 				];
 
+$subcategorias_name = [["Celulares","Accsesorios para celulares","Drones y Accesorios", "Camaras digitales","Accesorios para camaras"],
+						["Pc's desktop","Portatiles","Accesorios","Componentes Pc", "Tabletas", "Impresoras","Insumos"],
+						["Climatizacion-Aire Acondicionado","Iluminacion", "Heladeras","Televisores","Muebles", "Bazar y Jardin","Otros"],
+						["Consolas", "Juegos","Accesorios"],
+						["Novelas","Historia","Tecnicos","Escolares","Otros"],
+						["Autos","Motos","Camiones","Embarcaciones", "Otros"],
+						["Para Auto","Para Moto", "Accesorios", "Otros"],
+						["Maquinas", "Textiles", "Insumos","Otros"],
+						["Manuales", "Digitales", "Escanners","Otros"],
+						["Profesores", "Mantenimiento del Hogar", "Empresas", "Otros"],
+						["Tenis y Paddle","Futbol","Hockey", "Golf","Runing", "Gimnasio", "Basket", "Deportes  Motor", "Hobbies","Otros"],
+						[],
+						[],
+						[],
+						[]
+
+						];
+
+				
+
 
 for ($i=0; $i < sizeof($categorias_name); $i++) { 
 	if ($conexion->query("INSERT INTO vt_categorias (categoria) VALUES ('$categorias_name[$i]')")) {
-		echo "<br> Se añade categoria ".$categorias_name[$i];
+
+		echo "<br> -> Se añade categoria ".$categorias_name[$i];
+		for ($r=0; $r < sizeof($subcategorias_name[$i]) ; $r++) { 
+			
+			$cat = $subcategorias_name[$i][$r];
+			if ($conexion->query("INSERT INTO vt_sub_categoria_1
+			 (categoria,sub_categoria_1) VALUES (($i+1),'$cat')") ){
+			 	echo "<br> -----> Se añade sub categoria ".$subcategorias_name[$i][$r];
+			}
+		
+		}
 	}
-	;
+	
 }
 
-$subcategorias_name = [
-						
-						];
+
 
 
 $conexion->close();
