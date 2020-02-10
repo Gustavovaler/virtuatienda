@@ -108,11 +108,7 @@ body{
 	right: 15%;
 	position: relative;
 	width: 100px;
-}
-
-/*----------mas articulos del vendedor------------*/
-
-.vendedor-mas-art{
+}.vendedor-mas-art{
 	height: 280px;
 	
 	margin-bottom: 20px;
@@ -136,6 +132,41 @@ body{
 .mas-art-descripcion{
 	padding: 6px;
 }
+
+
+@media (max-width: 450px) {
+	h3,h5{
+		font-size: 1em;
+	}
+	.derecha{
+	width: 35%;
+	background: #ddeeff;
+	display: inline-block;
+	margin: 0;
+	box-sizing: border-box;
+	padding: 10px;
+	float: left;
+	margin-top: 5px;
+
+	}
+	.derecha2, .derecha3{
+		padding: 5px;
+
+	}
+	.derecha h3{
+		font-size: 1em;
+	}
+	.derecha2 h3{
+		font-size: 1em;
+
+	}
+	.tarjeta-art{
+	min-height: 0;
+	width: 33%;
+}
+
+/*----------mas articulos del vendedor------------*/
+
 
 
 /*----------------SECCION PREGUNTAS ----------------------*/
