@@ -127,6 +127,9 @@ body{
 		width: 48%;
 		display: inline-block;
 	}
+	.noticias-destacadas{
+		display: none;
+	}
 }
 @media (max-width: 640px){
 
